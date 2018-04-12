@@ -1,15 +1,4 @@
 public class SendTextMessage {
-    //these are the parameters that Flow will send (that flow gets from Process Builder)
-    public class RequestParameter{
-        @InvocableVariable(required=true)
-        public String method;
-        @InvocableVariable(required=true)
-        public String baseURL;
-        @InvocableVariable(required=true)
-        public String URI;
-        @InvocableVariable(required=true)
-        public String body;
-    }
     //this is the method that can be called from Flow or Process Builder
     @InvocableMethod(label='handleNewRequests' description='Reconstitue the Request based on the variables passed from Flow')
     public static void handleRequests(RequestParameter[] requestParameters) {
