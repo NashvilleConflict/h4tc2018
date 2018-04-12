@@ -1,10 +1,10 @@
 public class RequestParameter{
-    @InvocableVariable(required=true)
+    @InvocableVariable(required=false)
     public String method;
-    @InvocableVariable(required=true)
-    public String baseURL;
-    @InvocableVariable(required=true)
+    @InvocableVariable(required=false)
+    public String namedCredential;
+    @InvocableVariable(required=false)
     public String URI;
-    @InvocableVariable(required=true)
+    @InvocableVariable(required=false)
     public String body;
 }
